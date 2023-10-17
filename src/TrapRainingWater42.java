@@ -21,10 +21,52 @@ public class TrapRainingWater42 {
     }
 
     public static int[] test = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-    public static int[] test2 = new int[]{ 4,2,0,3,2,5};
+    public static int[] test2 = new int[]{4, 2, 0, 3, 2, 5};
 
-    public static int[] test3 = new int[]{ 2,0,2};
+    public static int[] test3 = new int[]{2, 0, 2};
 
+    public static int trap(int[] height) {
+        int higestPointLeft = 0, higestPointRight =0, water = 0;
+
+        higestPointRight= findHigestRight(0, height);
+        if( height[0] == higestPointRight){
+            return 0;
+        }
+        for (int i = 0; i < height.length; i++) {
+            int sum = 0;
+            higestPointRight = findHigestRight(i, height);
+            higestPointLeft = findHigestLeft(i, height);
+
+            sum = Math.min(higestPointLeft, higestPointRight)-height[i];
+            if(sum > 0){
+                water += sum;
+            }
+
+
+        }
+        return water;
+    }
+
+    public static int findHigestRight(int index, int[] height) {
+        int max = 0;
+        for (int i = index; i < height.length; i++) {
+            if (height[i] > max) {
+                max = height[i];
+            }
+        }
+        return max;
+    }
+
+    public static int findHigestLeft(int index, int[] height) {
+        int max = 0;
+        for (int i = index; i >= 0 ; i--) {
+            if (height[i] > max) {
+                max = height[i];
+            }
+        }
+        return max;
+    }
+    /*
 
     public static int trap(int[] height) {
         int leftPoint = 0, rightPoint = 0, higestPoint = height[0], water = 0;
@@ -69,5 +111,5 @@ public class TrapRainingWater42 {
         return water;
     }
 
-
+*/
 }
