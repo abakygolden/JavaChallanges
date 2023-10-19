@@ -14,9 +14,12 @@ public class Main {
         System.out.println("Testing trap 3 " + TrapRainingWater42.trap(TrapRainingWater42.test3));
         */
         //BACKSPACECOMPARE
+        /*
         System.out.println("Testing BACKSPACECOMPARE 1 " + BackspaceStringCompare844.backspaceCompare("ab#c","ad#c"));
         System.out.println("Testing BACKSPACECOMPARE 2 " + BackspaceStringCompare844.backspaceCompare("ab##","c#d#"));
         System.out.println("Testing BACKSPACECOMPARE 3 " + BackspaceStringCompare844.backspaceCompare("a#c","b"));
+        */
+       System.out.println("Testing MaximalSquare  " + MaximalSquare221.maximalSquare(MaximalSquare221.matrix));
 
     }
 
