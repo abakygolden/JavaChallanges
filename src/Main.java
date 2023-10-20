@@ -19,7 +19,16 @@ public class Main {
         System.out.println("Testing BACKSPACECOMPARE 2 " + BackspaceStringCompare844.backspaceCompare("ab##","c#d#"));
         System.out.println("Testing BACKSPACECOMPARE 3 " + BackspaceStringCompare844.backspaceCompare("a#c","b"));
         */
-       System.out.println("Testing MaximalSquare  " + MaximalSquare221.maximalSquare(MaximalSquare221.matrix));
+      // System.out.println("Testing MaximalSquare  " + MaximalSquare221.maximalSquare(MaximalSquare221.matrix));
+
+        //decodeAtIndex
+       // System.out.println("Testing decodeAtIndex 1 " + DecodeStringAtIndex880.decodeAtIndex("leet2code3",10));
+        System.out.println("Testing decodeAtIndex 2 " + DecodeStringAtIndex880.decodeAtIndex("ha22",5));
+       // System.out.println("Testing decodeAtIndex 3 " + DecodeStringAtIndex880.decodeAtIndex("a2345678999999999999999",1));
+
+        //   System.out.println("Testing decodeAtIndex 1 " + DecodeStringAtIndex880.decodeAtIndex("y959q969u3hb22odq595",222280369));
+
+        //  System.out.println("Testing decodeAtIndex 1 " + "leetleetcodeleetleetcodeleetleetcode".charAt(9) );
 
     }
 
