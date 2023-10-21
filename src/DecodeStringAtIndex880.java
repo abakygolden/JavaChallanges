@@ -29,7 +29,9 @@ public class DecodeStringAtIndex880 {
         }
     *
     * */
-    public static String decodeAtIndex(String s, int k) {
+    /*
+    Discarded Try
+        public static String decodeAtIndex(String s, int k) {
 
         StringBuilder result = new StringBuilder();
         k--;
@@ -64,6 +66,57 @@ public class DecodeStringAtIndex880 {
 
         return "";
     }
+    * */
+    // Inspired ont GoMasterCode  solution explanation https://www.youtube.com/watch?v=vmgVNV0u3pE
+    public static String decodeAtIndex(String s, int k) {
 
+        StringBuilder result = new StringBuilder();
+        int stringIndex = 0;
+        Long resultLength = 0L;
+        ArrayList<Long> stringLenghtAtIndex = new ArrayList<>();
+
+        //Storing all length of decodedString in array
+        while (k > resultLength) {
+            char tmp = s.charAt(stringIndex);
+            if (Character.isDigit(tmp)) {
+                int n = Character.getNumericValue(tmp);
+                resultLength = resultLength * (n);
+            } else {
+                resultLength++;
+            }
+            stringLenghtAtIndex.add(resultLength);
+            stringIndex++;
+        }
+
+        // I know that stringLenghtAtIndex 0 = 1 and stringLenghtAtIndex[size()] = resultLength
+
+        return findK(s, k, stringLenghtAtIndex, stringLenghtAtIndex.size()-1);
+    }
+
+    public static String findK(String s, long k,ArrayList<Long> arr, int i) {
+        long moduleResult = k % arr.get(i);
+        char tmpChar = s.charAt(i);
+        if (k == 1) {
+            return String.valueOf(s.charAt(0));
+        }
+        if (moduleResult == 0) {
+            if (Character.isDigit(tmpChar)) {
+                return findK(s, k, arr, i - 1);
+            } else {
+                return String.valueOf(tmpChar);
+            }
+        } else if (k <arr.get(i)) {
+            while (k < arr.get(i)) {
+                i--;
+            }
+            return findK(s, k, arr, i);
+        } else {
+            return findK(s, ((k - 1) %arr.get(i) + 1), arr, i);
+        }
+
+    }
 
 }
+
+
+

@@ -22,11 +22,15 @@ public class Main {
       // System.out.println("Testing MaximalSquare  " + MaximalSquare221.maximalSquare(MaximalSquare221.matrix));
 
         //decodeAtIndex
-       // System.out.println("Testing decodeAtIndex 1 " + DecodeStringAtIndex880.decodeAtIndex("leet2code3",10));
+        System.out.println("Testing decodeAtIndex 1 " + DecodeStringAtIndex880.decodeAtIndex("leet2code3",10));
         System.out.println("Testing decodeAtIndex 2 " + DecodeStringAtIndex880.decodeAtIndex("ha22",5));
-       // System.out.println("Testing decodeAtIndex 3 " + DecodeStringAtIndex880.decodeAtIndex("a2345678999999999999999",1));
+        System.out.println("Testing decodeAtIndex 3 " + DecodeStringAtIndex880.decodeAtIndex("a2345678999999999999999",1));
+        System.out.println("Testing decodeAtIndex 4 " + DecodeStringAtIndex880.decodeAtIndex("y959q969u3hb22odq595",222280369));
+        System.out.println("Testing decodeAtIndex 5 " + DecodeStringAtIndex880.decodeAtIndex("ixm5xmgo78",711));
+        System.out.println("Testing decodeAtIndex 6 " + DecodeStringAtIndex880.decodeAtIndex("yyuele72uthzyoeut7oyku2yqmghy5luy9qguc28ukav7an6a2bvizhph35t86qicv4gyeo6av7gerovv5lnw47954bsv2xruaej",123365626));
 
-        //   System.out.println("Testing decodeAtIndex 1 " + DecodeStringAtIndex880.decodeAtIndex("y959q969u3hb22odq595",222280369));
+
+
 
         //  System.out.println("Testing decodeAtIndex 1 " + "leetleetcodeleetleetcodeleetleetcode".charAt(9) );
 
