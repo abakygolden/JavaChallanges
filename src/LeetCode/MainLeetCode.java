@@ -36,9 +36,19 @@ public class MainLeetCode {
 //        System.out.println("Testing RomanToInteger 3  " + LeetCode.RomanToInteger13.romanToInt("III"));
 //        System.out.println("Testing RomanToInteger 13 " + LeetCode.RomanToInteger13.romanToInt("XIII"));
 //        System.out.println("Testing RomanToInteger  XXV " + LeetCode.RomanToInteger13.romanToInt("XXV"));
-      System.out.println("Testing RomanToInteger XXVII " + RomanToInteger13.romanToInt("LXXVII"));
+    //  System.out.println("Testing RomanToInteger XXVII " + RomanToInteger13.romanToInt("LXXVII"));
 //        System.out.println("Testing RomanToInteger  MCMXCII " + LeetCode.RomanToInteger13.romanToInt("MCMXCII"));
 
+
+
+        //TWO SUM 2
+//        int[] tmp = LeetCode.TwoSumII.twoSum(new int[]{2, 7, 11, 15},9);
+
+//       System.out.println("Testing TWO SUM 2  [0 ]=  " +tmp[0] +", [1] = " + tmp[1]);
+
+        //3 SUM 2
+
+        ThreeSum15.threeSum(new int[]{-1,0,1,0});
 
     }
 
