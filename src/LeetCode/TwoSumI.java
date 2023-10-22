@@ -2,8 +2,8 @@ package LeetCode;
 
 import java.util.HashMap;
 
-public class TwoSum1 {
-    public TwoSum1() {
+public class TwoSumI {
+    public TwoSumI() {
     }
 
     public int[] twoSum(int[] nums, int target) {
