@@ -1,3 +1,4 @@
+package LeetCode;
 
 public class TrapRainingWater42 {
     public TrapRainingWater42() {

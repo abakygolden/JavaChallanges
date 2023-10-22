@@ -1,3 +1,5 @@
+package LeetCode;
+
 public class BackspaceStringCompare844 {
     public BackspaceStringCompare844() {
     }
