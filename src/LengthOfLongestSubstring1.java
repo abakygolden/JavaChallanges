@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
-public class LengthOfLongestSubstring03 {
-    public LengthOfLongestSubstring03(){};
+public class LengthOfLongestSubstring1 {
+    public LengthOfLongestSubstring1(){};
 
     public static int lengthOfLongestSubstring(String s) {
         int leftPointer = 0, rightPointer = 0, result = 0;
